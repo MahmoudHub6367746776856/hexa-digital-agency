@@ -24,3 +24,9 @@ Built to demonstrate professional web development, clean architecture, and secur
 - JWT Authentication
 
 ## 📁 Project Structure
+hexa-digital-agency/
+├── frontend/
+├── backend/
+├── README.md
+├── .gitignore
+└── .env.example
