@@ -30,3 +30,13 @@ hexa-digital-agency/
 ├── README.md
 ├── .gitignore
 └── .env.example
+
+## ▶️ How to Run Locally 
+# Backend
+cd backend
+npm install
+npm run dev
+
+# Frontend
+cd frontend
+# open index.html or use live server
