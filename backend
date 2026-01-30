@@ -1,9 +1,0 @@
-backend/
-├── controllers/
-├── models/
-├── routes/
-├── middlewares/
-├── config/
-├── app.js
-├── server.js
-└── package.json 
