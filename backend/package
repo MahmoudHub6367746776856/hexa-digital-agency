@@ -1,12 +1,3 @@
-backend/
-├── controllers/
-├── models/
-├── routes/
-├── middlewares/
-├── config/
-├── app.js
-├── server.js
-└── package.json
 {
   "name": "hexa-digital-backend",
   "version": "1.0.0",
