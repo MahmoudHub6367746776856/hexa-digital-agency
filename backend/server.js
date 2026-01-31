@@ -1,6 +1,9 @@
+require('dotenv').config(); // <-- السطر الجديد الأول
 const express = require('express');
 const app = express();
-const PORT = 5000;
+
+// تعديل بسيط هنا
+const PORT = process.env.PORT || 8000;
 
 app.get('/', (req, res) => {
   res.send('Backend is running 🚀');
