@@ -1,12 +1,16 @@
 const express = require('express');
 const app = express();
 
-// --- Middlewares (سيتم إضافة المزيد هنا لاحقاً) ---
+// --- Import Routes ---
+const testRoutes = require('./routes/testRoutes'); // <-- استيراد ملف الـ routes
+
+// --- Middlewares ---
 
 // --- Routes ---
-app.get('/', (req, res) => {
-  res.send('Hello from app.js! Backend is running 🚀');
-});
+// app.get('/', (req, res) => { // <-- امسح هذا الجزء القديم
+//   res.send('Hello from app.js! Backend is running 🚀');
+// });
+app.use('/api', testRoutes); // <-- استخدم الـ routes الجديدة
 
 // --- Export the app ---
-module.exports = app; // <-- أهم سطر: تصدير التطبيق ليستخدمه server.js
+module.exports = app;
