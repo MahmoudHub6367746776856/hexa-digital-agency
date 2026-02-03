@@ -1,22 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hexa Digital Agency</title>
-  <style>
-    body { font-family: sans-serif; display: grid; place-content: center; height: 100vh; text-align: center; }
-    #status { padding: 1rem; border-radius: 8px; font-weight: bold; }
-    .ok { background-color: #d4edda; color: #155724; }
-    .error { background-color: #f8d7da; color: #721c24; }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hexa Digital | Digital Marketing Agency</title>
+
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <h1>Hexa Digital Agency Frontend</h1>
-  <h2>Checking Backend Status...</h2>
-  <div id="status">Loading...</div>
 
-  <!-- The JavaScript file will be created in the next step -->
-  <script src="js/main.js"></script>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">Hexa<span>Digital</span></div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Grow Your Business Online</h1>
+      <p>We help small businesses and companies reach more customers through digital marketing.</p>
+      <a href="#" class="btn-primary">Get Started</a>
+    </div>
+  </section>
+
+  <script src="assets/js/main.js"></script>
+
+    <!-- Services Section -->
+  <section class="services">
+    <div class="container">
+      <h2>Our Services</h2>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Social Media Marketing</h3>
+          <p>Grow your audience and increase engagement across all platforms.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>SEO Optimization</h3>
+          <p>Improve your website ranking and get discovered by the right clients.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Paid Advertising</h3>
+          <p>Launch high-converting ad campaigns that deliver real results.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- About Section -->
+  <section class="about">
+    <div class="container">
+      <h2>About Hexa Digital</h2>
+      <p>
+        Hexa Digital is a digital marketing agency focused on helping small
+        businesses and companies grow their online presence, attract new
+        customers, and increase revenue through smart digital strategies.
+      </p>
+    </div>
+  </section>
+
+    <!-- Contact Section -->
+  <section class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+
+
+  
+    <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Hexa Digital. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
+
