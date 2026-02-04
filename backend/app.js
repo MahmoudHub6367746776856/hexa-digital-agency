@@ -1,15 +1,18 @@
-const express = require('express');
-const cors = require('cors'); // <-- 1. استيراد المكتبة
+const express = require("express");
+const cors = require("cors");
+
 const app = express();
 
-// --- Import Routes ---
-const testRoutes = require('./routes/testRoutes');
-
 // --- Middlewares ---
-app.use(cors()); // <-- 2. استخدام المكتبة
+app.use(cors());
+app.use(express.json());
 
 // --- Routes ---
-app.use('/api', testRoutes);
+const testRoutes = require("./routes/testRoutes");
+const contactRoutes = require("./routes/contactRoutes");
 
-// --- Export the app ---
+app.use("/api", testRoutes);
+app.use("/api", contactRoutes);
+
+// --- Export app ---
 module.exports = app;
